@@ -147,7 +147,7 @@ height: 35%;
 
 .images{
 width: 300px;
-height: 300;
+height: 300px;
 }
 
 ul{
@@ -156,6 +156,7 @@ ul{
 
 .gallery-img{
   width: 100%;
+  
   }
 
 #img-gallery{
