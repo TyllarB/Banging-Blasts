@@ -58,11 +58,22 @@
                 <br/>
 
                 <input type="file" id="file" name="filename">
-                <input type="submit">
+                
+                <script>
+                    function send_form(id, message) {
+                        document.getElementById(id).innerHTML = message;
+                    }
+                </script>
+                
+                <button type="button" onclick='send_form("form_outcome", "Form has been sent successfully!")'>Submit</button>
+                
 
 
             </fieldset>
         </form>
+        <div>
+            <p id="form_outcome"></p>
+        </div>
         </div>
 
         
@@ -83,6 +94,8 @@
    <footer class="border3">
         <p >Copyright [Tyllar Barrett]</p>
     </footer>
+
+    
 </body>
  
 </html>
