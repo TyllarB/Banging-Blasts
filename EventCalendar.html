@@ -5,16 +5,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Banging Blasts Society</title>
     <link rel="stylesheet" href="css/main.css">
-    <img src="h:\First Year\images\music logo.jpg" alt="Logo" id = "logo">
 </head>
 
 <body>
-v
+    <img class="logo" src="images\logo.png" alt="Logo" id="logo">
+    <header class="border">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1>Banging Blasts</h1>
+                </div>
+                <div class="col-auto">
+                    <form>
+                        <input type="text" name="E-mail" value="email@email.com">
+                        <input type="text" name="Password" value="Password123">
+                        <button type="button" onclick="Login()">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-        <header class="border">
-            <h1>Banging Blasts</h1>
-            </header>
-
+    </header>
     <nav>
     <ul>
                 <a href= 'ContactUs.html'><li>Contact Us</li></a>
@@ -26,8 +37,11 @@ v
     
             </ul>
     </nav>
+   
+
 
     <main>
+               
         <div>
            
 
@@ -222,6 +236,59 @@ v
     
 
         </table> </div>
+
+        <script>
+           
+            var isLoggedIn = false;
+    
+         
+            function Login() {
+            
+                
+               
+                isLoggedIn = !isLoggedIn;
+              
+                if (isLoggedIn) {
+                    alert("You have been logged in!");
+                } else {
+                    alert("You have been logged out!");
+                }
+            }
+
+
+            function submit_event() {
+            if (!isLoggedIn) {
+                alert("Please log in to submit an event!");
+                return;
+            }
+            var title = document.forms["Events"]["event_Title"].value;
+            var date = document.forms["Events"]["event_date"].value;
+            if (title == "") {
+            alert("An event must have a title!");
+            }
+            else {
+            if (date.length == 0) {
+            alert("An event must have a date!");
+            }
+            else {
+            alert("Event submitted! The society will contact you soon!");
+            }
+            }
+            }
+            </script>
+            
+         <p>Want to recommend an event? Tell us below!</p>
+        
+            <form name="Events">
+
+            <label for="event_Title">Event placeholder!?!</label>
+            <input type="text" name="event_Title" value="">
+
+            <label for="event_date">Event Date</label>
+            <input type="date" name="event_date" value="">
+            <button type="button" onclick="submit_event()">submit</button>
+        </form>
+
     </main>
 
     <aside>
@@ -229,8 +296,9 @@ v
     </aside>
 
     <footer class="border3">
-        <p>Copyright [Tyllar Barrett]</p>
-    </footer>
+        <p>Copyright [Tyllar Barrett] [2024]</p>
+        </footer>
+    
 
 </body>
 
