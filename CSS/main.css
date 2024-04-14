@@ -156,6 +156,7 @@ height: 85%;
 }
 
 
+
 ul{
 width: (100%/5) ;
 }
@@ -163,12 +164,17 @@ width: (100%/5) ;
 .gallery-img{
   margin-top: 20px;
   width: 100%;
+
+  
+
+
   height: auto;
   margin-right: 20px;
 }
 .gallery-img:not(:hover) {
   filter: grayscale(100%) blur(2px);
 }
+  }
 
 
 #img-gallery{
