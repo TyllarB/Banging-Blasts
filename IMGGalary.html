@@ -1,3 +1,13 @@
+
+<!--
+Threat Model
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Intentional
+Threat Motivation: Embarrass the society
+Threat Impact: Trust in society lost, images defaced.
+Threat stop: only the administrator account can change images when logged in and therefore input has to be validated before
+-->
 <html>
 
 <head>
@@ -5,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Banging Blasts Society</title>
     <link rel="stylesheet" href="css/main.css">
-    <img src="h:\First Year\images\music logo.jpg" alt="Logo" id = "logo">
+    <img class="logo" src="images\logo.png" alt="Logo" id = "logo">
 </head>
 
 <body>
@@ -27,24 +37,39 @@
 
     </nav>
 
+    <script>
+    function highlight(image){
+        image.style = "border: solid white 4px";
+        
+    }
+
+    function delight(image){
+        image.style = "border: none";
+        image.style.filter = "blur(3px)"
+    }
+    </script>
+
+
     <main>
         <div class="images">
-            <div id="img-gallery" class="container"></div>
-                <div class="row"></div>
-                     <div class="col-sm"></div>
-                        <img src="H:\First Year\images\nirvana.png" alt="Nirvana"/>
-                        <img src="H:\First Year\images\Interstate_Love_Song_album_cover.jpg" alt=" Stone Temple Pilots"/>
-                        <img src="H:\First Year\images\Dirt_(Alice_in_Chains_album_-_cover_art).jpg" alt="alice in Chains"/>
-                </div>
+            <div id="img-gallery" class="container">
+                <div class="row">
+
+                     <div class="col-sm">
+                        <img src="images\nirvana.png" onmouseover="highlight(this)" onmouseout="delight(this)" alt="Nirvana" class="gallery-img"/>
+                        <img src="images\CSHR.jpg" onmouseover="highlight(this)" onmouseout="delight(this)"alt=" Car Seat Head Rest" class="gallery-img"/>
+                        <img src="images\modernbaseball.jpg" onmouseover="highlight(this)" onmouseout="delight(this)" alt="modern baseball"class="gallery-img"/>
+                     </div>
                     <div class="col-sm">
-                        <img src="H:\First Year\images\PearlJam-Ten2.jpg" alt="pearlJam"/>
-                        <img src="H:\First Year\images\TFB.JPG" alt="The Front Bottoms"/>
-                        <img src="H:\First Year\images\TFS.jpg" alt="The Flat Stanley"/>
+                        <img src="images\pearljam.jpg" onmouseover="highlight(this)" onmouseout="delight(this)" alt="pearl Jam"class="gallery-img"/>
+                        <img src="images\TFB.JPG" onmouseover="highlight(this)" onmouseout="delight(this)" alt="The Front Bottoms"class="gallery-img"/>
+                        <img src="images\TFS.jpg" onmouseover="highlight(this)" onmouseout="delight(this)" alt="The Flat Stanley"class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img src="H:\First Year\images\SmashingPumpkins-1979.jpg" alt=" the smashing pumpkins"/>
-                        <img src="H:\First Year\images\Life's_Not_Out_to_Get_You.jpg" alt="neckDeep"/>
-                        <img src="H:\First Year\images\sarah.jpg" alt="Alex G"/>
+                        <img src="images\Zachbryan.png" onmouseover="highlight(this)" onmouseout="delight(this)" alt=" zach bryan"class="gallery-img"/>
+                        <img src="images\neckdeep.jpg" onmouseover="highlight(this)" onmouseout="delight(this)" alt="neckDeep"class="gallery-img"/>
+                        <img src="images\mccaferty.jpg" onmouseover="highlight(this)" onmouseout="delight(this)" alt="mccaferty"class="gallery-img"/>
+                    </div>
             
         </div>
     </div>
@@ -57,8 +82,9 @@
     </aside>
 
     <footer class="border3">
-        <p>Copyright [Tyllar Barrett]</p>
-    </footer>
+        <p>Copyright [Tyllar Barrett] [2024]</p>
+        </footer>
+    
 
 </body>
 
