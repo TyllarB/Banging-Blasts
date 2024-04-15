@@ -37,13 +37,13 @@ color: black;
 .border2 {
     background-color: #D9F0FF;
     border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 0, 0);
-   border-radius: 10px;
+    border-width: 3px;
+    border-color: #6c94b4;
+   border-radius: 1px;
   }
 .border3 {
     background-color:#6c94b4;
-    border-radius: 10px;
+    border-radius: 1px;
     margin-top: auto;
     
 
@@ -61,7 +61,7 @@ border-color: #6F73D2 ;
 border-style: solid;
 list-style-type: none;
 float: left;
-width: 16%;
+width: calc(97%/7);
 padding: 15px;
 }
 
@@ -121,7 +121,7 @@ table td{
 }
 
 .right-col{
-
+padding: 30px;
 float: right;
 width: 25%;
 
@@ -157,9 +157,7 @@ height: 85%;
 
 
 
-ul{
-width: (100%/5) ;
-}
+
 
 .gallery-img{
   margin-top: 20px;
@@ -174,7 +172,7 @@ width: (100%/5) ;
 .gallery-img:not(:hover) {
   filter: grayscale(100%) blur(2px);
 }
-  }
+  
 
 
 #img-gallery{
@@ -210,5 +208,37 @@ height: 75px;
   background-color: #6c94b4;
   border-radius: 10px;
   text-align: center;
+
+}
+
+.forms{
+padding-top: 10px;
+margin-right: 10px;
+padding-left: 20px;
+
+}
+.faq{
+
+padding-right: 20px;
+padding-left: 20px;
+width: 300px;
+height: 300px;
+
+}
+.crazyfrog{
+  padding: 30px;
+  float: right;
+}
+
+.gummybear{
+  padding: 30px;
+  float: left;
+}
+.container{
+  padding-left: 200px;
+}
+#Titles:hover{
+color: red;
+font-size: 35px;
 
 }
