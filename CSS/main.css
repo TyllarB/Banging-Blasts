@@ -93,12 +93,13 @@ width: calc(100% / 8);
 padding: 10px;
 }
 
-table tr :nth-child(even) {
- background-color:  #5796b3;
-}
 
-table tr:hover{
-  background-color: #83C9F4;
+
+table tr:nth-child(odd) td:hover,
+table tr:nth-child(even) td:hover,
+table tr:nth-child(odd) th:hover,
+table tr:nth-child(even) th:hover {
+  background-color: #0d4f77;
 }
 
 table th{
